@@ -99,3 +99,10 @@ Generation Mix and Forecast datasets already contained timestamps, while Demand 
 - Missing Values: 0
 - Duplicate Rows: 0
 - Invalid Dates: 0
+
+
+### Timestamp Standardization
+
+During data integration validation, the Forecast dataset used UTC timezone-aware timestamps (`datetime64[ns, UTC]`) while Demand and Generation datasets used timezone-naive timestamps (`datetime64[ns]`).
+
+To ensure consistent joins and temporal alignment, timezone information was removed from the Forecast dataset before integration.
