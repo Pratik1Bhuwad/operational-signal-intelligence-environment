@@ -59,3 +59,43 @@ Observations:
 * Contains forecast vs actual demand.
 * Includes forecast error metrics.
 * Suitable for operational forecasting signals.
+
+
+
+## Data Preparation Summary
+
+### Date Conversion
+
+Converted date columns to datetime format:
+
+- SETTLEMENT_DATE
+- DATETIME
+- Datetime
+
+Reason:
+To enable time-based analysis and dataset integration.
+
+### Data Filtering
+
+Generation Mix dataset filtered to 2025.
+
+Forecast Performance dataset filtered to 2025.
+
+Reason:
+National Demand dataset contains only 2025 records. Filtering ensures consistent time coverage across all datasets.
+
+### Timestamp Creation
+
+Created a new Datetime column in the National Demand dataset using:
+
+- SETTLEMENT_DATE
+- SETTLEMENT_PERIOD
+
+Reason:
+Generation Mix and Forecast datasets already contained timestamps, while Demand data used settlement periods. Creating a common timestamp enables dataset integration.
+
+### Data Quality Results
+
+- Missing Values: 0
+- Duplicate Rows: 0
+- Invalid Dates: 0
