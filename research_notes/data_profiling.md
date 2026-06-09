@@ -127,3 +127,26 @@ Rows:
 
 Purpose:
 Provides a unified operational view combining demand, generation, renewable contribution, carbon intensity, and forecasting performance.
+
+
+## KPI Engine Summary
+
+The KPI Engine was developed using the Master Operational Dataset.
+
+KPIs Implemented:
+
+1. Average National Demand (MW)
+2. Peak National Demand (MW)
+3. Average Total Generation (MW)
+4. Renewable Generation Share (%)
+5. Fossil Generation Share (%)
+6. Average Carbon Intensity (gCO₂/kWh)
+7. Forecast Accuracy (%)
+8. Average Forecast Error (MW)
+9. Peak Renewable Generation (MW)
+10. Peak Carbon Intensity (gCO₂/kWh)
+11. Peak Forecast Error (MW)
+
+Purpose:
+
+The KPI Engine provides operational visibility into demand, generation mix, sustainability performance, and forecast quality.

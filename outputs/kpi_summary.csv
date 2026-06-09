@@ -1,0 +1,12 @@
+KPI,Value
+Average National Demand (MW),26158.205878995435
+Peak National Demand (MW),45924.0
+Average Total Generation (MW),33017.35114155251
+Renewable Generation Share (%),37.75460547594464
+Fossil Generation Share (%),26.725765845076143
+Average Carbon Intensity (gCO₂/kWh),126.84366438356165
+Forecast Accuracy (%),97.30881278538813
+Average Forecast Error (MW),680.0336187214612
+Peak Renewable Generation (MW),29445.0
+Peak Carbon Intensity (gCO2/kWh),295.0
+Peak Forecast Error (MW),4931.0
