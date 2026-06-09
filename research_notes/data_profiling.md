@@ -150,3 +150,49 @@ KPIs Implemented:
 Purpose:
 
 The KPI Engine provides operational visibility into demand, generation mix, sustainability performance, and forecast quality.
+
+
+## Signal Engine Summary
+
+Operational signals were developed to identify important grid events and operational conditions.
+
+Signals Implemented:
+
+1. Demand Spike
+
+   * Trigger: Demand exceeds 95th percentile.
+
+2. Forecast Failure
+
+   * Trigger: Absolute forecast error exceeds 2000 MW.
+
+3. Low Renewable Window
+
+   * Trigger: Renewable share falls below 20%.
+
+4. High Carbon Period
+
+   * Trigger: Carbon intensity exceeds 200 gCO₂/kWh.
+
+Purpose:
+
+The Signal Engine converts raw operational data into actionable alerts that can support operational monitoring and decision-making.
+
+
+## Signal Engine Results
+
+Signal Occurrences:
+
+- Demand Spike: 876
+- Forecast Failure: 718
+- Low Renewable Window: 2759
+- High Carbon Period: 2270
+
+Output Files:
+
+- signal_summary.csv
+- master_with_signals.csv
+
+Purpose:
+
+The Signal Engine transformed operational measurements into actionable monitoring signals that can be used for alerting, dashboarding, and root-cause analysis.
