@@ -196,3 +196,10 @@ Output Files:
 Purpose:
 
 The Signal Engine transformed operational measurements into actionable monitoring signals that can be used for alerting, dashboarding, and root-cause analysis.
+
+
+- Demand during spike events = 40,286 MW vs overall average = 26,158 MW.
+- Fossil generation during high-carbon periods = 18,860 MW vs overall average = 8,824 MW.
+- Renewable generation during high-carbon periods = 6,308 MW vs overall average = 12,466 MW.
+
+

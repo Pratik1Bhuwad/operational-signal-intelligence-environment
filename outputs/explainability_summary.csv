@@ -1,0 +1,5 @@
+Signal,Evidence
+Demand Spike,Average demand during spikes is significantly higher than normal demand.
+Forecast Failure,Forecast failures show average error above 2500 MW.
+High Carbon Period,High carbon periods have much higher fossil generation and lower renewable generation.
+Low Renewable Window,Low renewable periods are associated with elevated carbon intensity.
