@@ -31,14 +31,18 @@ Visuals:
 * Signal Timeline
 * Monthly Signal Distribution
 
-## Page 3: Explainability
+## Page 3:
+Explainability & Root Cause Analysis
 
-Visuals:
+* Demand Spike Analysis
+* High Carbon Analysis
+* Forecast Error Analysis
+* Key Findings
 
-* Fossil vs Renewable during High Carbon Periods
-* Forecast Error Distribution
-* Demand During Spike Events
-* Carbon Intensity Analysis
+## Page 4:
+Data Health & Quality Monitoring
 
-Purpose:
-Provide operational visibility and explain signal drivers.
+* Missing Values
+* Duplicate Records
+* Dataset Health
+* Validation Status

@@ -159,20 +159,28 @@ Operational signals were developed to identify important grid events and operati
 Signals Implemented:
 
 1. Demand Spike
-
-   * Trigger: Demand exceeds 95th percentile.
+  * Trigger: Demand exceeds 95th percentile.
 
 2. Forecast Failure
-
-   * Trigger: Absolute forecast error exceeds 2000 MW.
+  * Trigger: Absolute forecast error exceeds threshold.
 
 3. Low Renewable Window
-
-   * Trigger: Renewable share falls below 20%.
+  * Trigger: Renewable generation falls below 10th percentile.
 
 4. High Carbon Period
+  * Trigger: Carbon intensity exceeds 90th percentile.
 
-   * Trigger: Carbon intensity exceeds 200 gCO₂/kWh.
+5. Supply Stress
+  * Trigger: Demand approaches available generation capacity.
+
+6. Generation Surplus
+  * Trigger: Generation exceeds demand by 20%.
+
+7. Renewable Surge
+  * Trigger: Renewable generation exceeds 90th percentile.
+
+8. Demand Drop
+  * Trigger: Demand falls below 10th percentile.
 
 Purpose:
 
@@ -187,6 +195,10 @@ Signal Occurrences:
 - Forecast Failure: 718
 - Low Renewable Window: 2759
 - High Carbon Period: 2270
+- Supply Stress: 601
+- Generation Surplus: 10181
+- Renewable Surge: 1752
+- Demand Drop: 1752
 
 Output Files:
 
@@ -203,3 +215,45 @@ The Signal Engine transformed operational measurements into actionable monitorin
 - Renewable generation during high-carbon periods = 6,308 MW vs overall average = 12,466 MW.
 
 
+## Signal Intelligence Layer
+
+To improve operational explainability, every signal event was expanded into a structured signal record containing:
+
+- timestamp
+- signal_name
+- severity
+- reason
+- supporting_metric
+- confidence
+
+Output:
+
+signal_intelligence_table.csv
+
+Result:
+
+20,909 operational signal events generated.
+
+Purpose:
+
+Transforms binary signal flags into explainable operational intelligence suitable for monitoring, alerting, and analyst investigation.
+
+## Operational Summary & Automation Layer
+
+A summary generation module was implemented:
+
+src/reporting/summary_generator.py
+
+Functionality:
+
+- Reads KPI outputs
+- Reads signal outputs
+- Automatically generates operational summaries
+
+Output:
+
+daily_operational_summary.txt
+
+Purpose:
+
+Provides automated operational reporting and satisfies the automation layer requirement of the project.
