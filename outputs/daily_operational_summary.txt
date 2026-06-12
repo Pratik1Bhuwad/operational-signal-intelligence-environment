@@ -1,0 +1,33 @@
+
+DAILY OPERATIONAL SUMMARY
+
+Key Findings
+------------
+Average National Demand:
+26158.21 MW
+
+Peak National Demand:
+45924 MW
+
+Emerging Risks
+--------------
+Demand Spike Events:
+876
+
+Forecast Failure Events:
+718
+
+Operational Observations
+------------------------
+Low Renewable Windows:
+2759
+
+High Carbon Periods:
+2270
+
+Priority Watch Areas
+--------------------
+Monitor demand spikes,
+forecast failures,
+renewable availability,
+and carbon intensity trends.
