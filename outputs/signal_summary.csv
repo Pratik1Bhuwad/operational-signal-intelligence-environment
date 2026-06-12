@@ -1,5 +1,9 @@
-Signal,Occurrences
+Signal,Count
 Demand Spike,876
 Forecast Failure,718
 Low Renewable Window,2759
 High Carbon Period,2270
+Supply Stress,601
+Generation Surplus,10181
+Renewable Surge,1752
+Demand Drop,1752
