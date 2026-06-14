@@ -4,6 +4,60 @@
 
 This project uses three publicly available electricity system datasets.
 
+## Dataset Sources
+
+### National Demand Data
+
+Source: National Energy System Operator (NESO) Open Data Portal.
+
+### Historic Generation Mix Data
+
+Source: National Energy System Operator (NESO) Open Data Portal.
+
+### Day Ahead Half-Hourly Demand Forecast Performance Data
+
+Source: National Energy System Operator (NESO) Open Data Portal.
+
+---
+
+## Collection Method
+
+The datasets were manually downloaded as CSV files from the NESO Open Data Portal and stored in the `data/raw` directory.
+
+The selected datasets provide complementary information on:
+
+* Electricity demand
+* Electricity generation mix
+* Forecasting performance
+
+These datasets were integrated to create a unified operational analytics environment.
+
+---
+
+## Dataset Limitations
+
+* Analysis is limited to data available for the year 2025.
+* Regional-level demand and generation information is not available.
+* No outage or asset-level operational data was provided.
+* Signal thresholds are based on deterministic statistical rules rather than official operational policies.
+* Forecast performance analysis is limited to the metrics available in the source dataset.
+
+---
+
+## Cleaning Decisions
+
+The following preparation and cleaning steps were performed:
+
+* Converted all date fields to datetime format.
+* Created a common Datetime field using Settlement Date and Settlement Period.
+* Filtered Generation Mix data to 2025.
+* Filtered Forecast Performance data to 2025.
+* Removed timezone information from Forecast timestamps to ensure alignment.
+* Validated that no missing values were present.
+* Validated that no duplicate records were present.
+* Integrated datasets using an inner join on the Datetime field.
+
+
 ### Dataset 1: National Demand Data
 
 Purpose:
