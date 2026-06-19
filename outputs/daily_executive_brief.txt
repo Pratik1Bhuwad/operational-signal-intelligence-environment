@@ -1,0 +1,41 @@
+
+EXECUTIVE OPERATIONAL BRIEF
+
+CURRENT OPERATIONAL STATE
+
+Total Incidents: 5526
+
+Critical Incidents: 77
+
+High Severity Incidents: 578
+
+Executive Escalations: 77
+
+
+TOP RISKS
+
+incident_type
+CURTAILMENT_RISK_INCIDENT       1606
+OVER_GENERATION_INCIDENT        1573
+SUSTAINABILITY_INCIDENT         1567
+PEAK_LOAD_EMISSIONS_INCIDENT     448
+DEMAND_ANOMALY_INCIDENT           88
+
+
+IMMEDIATE ACTIONS
+
+1. Monitor critical incidents
+2. Review executive escalations
+3. Investigate sustainability incidents
+4. Monitor forecast risk incidents
+5. Review grid stress conditions
+
+
+WATCHLIST
+
+incident_type
+OPERATIONAL_RISK_INCIDENT     84
+GRID_STRESS_INCIDENT          77
+FORECAST_RISK_INCIDENT        44
+RENEWABLE_SUPPORT_INCIDENT    37
+CAPACITY_PLANNING_INCIDENT     2
