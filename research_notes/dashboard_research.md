@@ -142,7 +142,7 @@ Any incident carrying a `CRITICAL` or Level 4 severity classification is mathema
 
 ### Incident Queue
 
-The live active incident queue occupies the primary central-left region of the UI workspace (60% horizontal grid split). It is organized as a unified, single-pane vertical tracking matrix, sorted via a compound mathematical urgency score balancing both severity weight and total elapsed time.
+The live active incident queue occupies the primary central-left region of the UI workspace (60% horizontal grid split). It is organized as a unified, single-pane vertical tracking matrix, sorted by severity and operational priority to ensure critical incidents receive immediate attention.
 
 ### Escalation Visibility
 
@@ -191,8 +191,7 @@ The insights gained from investigating these high-density real-world systems map
 | **Ownership Visibility** | `escalation_engine.py` | Assigns deterministic ownership tiers across an immutable 4-level command scale, directly inspired by SOC/EOC protocols. |
 | **Incident Lifecycle** | `timeline_engine.py` | Builds reconstruction timelines of operational events, providing the historical audit transparency identified in Grafana. |
 | **Executive Awareness** | `executive_summary_generator.py` | Compiles raw incidents into high-level briefings designed to satisfy the four fundamental executive cognition loops. |
-| **Decision Visibility** | `control_room/` | Hosts the 3 distinct wireframe views, ensuring tailored data presentation depending on stakeholder access tiers. |
-
+| **Decision Visibility** | `Power BI Control Room Dashboard` | Operator, Regional Controller and Executive views provide role-specific operational visibility. |
 ---
 
 ## Section 11 — Dashboard Architecture
